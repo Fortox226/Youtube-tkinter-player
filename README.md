@@ -1,9 +1,9 @@
 # Youtube-tkinter-player
 
-Menadżer: Jan Miepiraszwil
-Mężczyzna na posyłki: Andrzej Wiekiczko
-Dokumentator: Tobiasz Twardy
-Murzynki Bambo: Filip Zakwaski, Fabian Sernik
+Menadżer: Jan Miepariszwili
+Mężczyzna na posyłki: Andrzej Wieliczko
+Dokumentator: Tobiasz Twardak
+Murzynki Bambo: Filip Zabrzewski, Fabian Stadnik
 
-a
+
 
