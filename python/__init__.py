@@ -1,2 +1,7 @@
 from main import *
-allFromMain()
+from GUI import *
+
+startWindow()
+if next:
+    allFromMain()
+
