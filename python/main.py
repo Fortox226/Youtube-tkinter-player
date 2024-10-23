@@ -3,10 +3,37 @@ import requests
 import time
 # from GUI import *
 
-ydl_opts = {}
+ydl_opts = {
+    # 'format': 'bestaudio/best',
+    # 'postprocessors': [{
+    #     'key': 'FFmpegExtractAudio',
+    #     'preferredcodec': 'mp3',
+    #     'preferredquality': '192',
+    # }],
+}
 
-def allFromMain(link):
+def allFromMain(link, format):
     def main():
+        # if format == 'mp4':
+        #     ydl_opts = {
+        #         'format': 'bestaudio/best',
+        #         'postprocessors': [{
+        #             'key': 'FFmpegExtractAudio',
+        #             'preferredcodec': 'mp4',
+        #             'preferredquality': '192',
+        #         }],
+        #     } 
+        # elif format == 'mp3':
+        #     ydl_opts = {
+        #         'format': 'bestaudio/best',
+        #         'postprocessors': [{
+        #             'key': 'FFmpegExtractAudio',
+        #             'preferredcodec': 'mp3',
+        #         }],
+        #     } 
+        # else:
+        #     print('something went wrong')
+
         def dwl_vid(video_url):
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 ydl.download([video_url])
@@ -36,3 +63,4 @@ def allFromMain(link):
             print("Połączenie z internetem zostało nawiązane!")
             main()
             break
+# allFromMain('https://www.youtube.com/watch?v=wqeGPX7TRv0')
