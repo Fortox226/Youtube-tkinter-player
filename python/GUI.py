@@ -1,15 +1,17 @@
 import tkinter as tk
-# global next
-next = False
-def startWindow():
-    
-    def nextStep():
-        global next
-        next = True
-        
+from main import *
+
+def startWindow():    
     root = tk.Tk()
     root.geometry('400x400')
-    button = tk.Button(root, text='Rozpocznij pobieranie', command=nextStep)
+
+    label = tk.Label(root, text='Wklej link do filmu: ')
+    label.pack()
+
+    entry = tk.Entry(root)
+    entry.pack()
+
+    button = tk.Button(root, text='Rozpocznij pobieranie', command=lambda: allFromMain( entry.get()))
     button.pack()
 
     root.mainloop()

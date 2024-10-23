@@ -1,10 +1,11 @@
 import yt_dlp
 import requests
 import time
+# from GUI import *
 
 ydl_opts = {}
 
-def allFromMain():
+def allFromMain(link):
     def main():
         def dwl_vid(video_url):
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -12,8 +13,8 @@ def allFromMain():
 
         channel = 1
         while channel == 1:
-            link_of_the_video = input("Copy & paste the URL of the YouTube video you want to download: ")
-            zxt = link_of_the_video.strip()
+            # link_of_the_video = input("Copy & paste the URL of the YouTube video you want to download: ")
+            zxt = link.strip()
 
             dwl_vid(zxt)
             channel = int(input("Enter 1 if you want to download more videos\nEnter 0 if you are done: "))

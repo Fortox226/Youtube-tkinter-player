@@ -1,7 +1,9 @@
 from main import *
 from GUI import *
 
-startWindow()
-if next:
-    allFromMain()
+def main():
+    startWindow()
 
+
+if __name__ == '__main__':
+    main()
