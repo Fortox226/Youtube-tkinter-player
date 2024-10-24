@@ -13,10 +13,10 @@ Murzynki Bambo: Filip Zabrzewski, Fabian Stadnik
 - Tworzenie pracy nad terminarzem w dniu 16.10.2024 
 
 # Spis treści
-* [Ogólne informacje](#Ogólne-informacje)
-* [Technologie](#Technologie)
-* [Instrukcja](#Instrukcja)
-* [Wygląd aplikacji](#Wygląd-aplikacji)
+* [Ogólne informacje](#ogólne-informacje)
+* [Technologie](#technologie)
+* [Instrukcja](#instrukcja)
+* [Wygląd aplikacji](#wygląd-aplikacji)
 
 
 
