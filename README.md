@@ -15,9 +15,18 @@ Murzynki Bambo: Filip Zabrzewski, Fabian Stadnik
 ## Spis treści:
 
 
-* [Ogólne informacje]
-* [Technologie]
-* [instrukcja]
-* [Wygląd aplikacji]
+* Ogólne informacje
+* Technologie
+* instrukcja
+* Wygląd aplikacji
 
+
+
+
+## Ogólne informacje
+<details>
+<summary>Click here to see general information about <b>Project</b>!</summary>
+<b>Lorem ipsum</b>. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+</details>
 
