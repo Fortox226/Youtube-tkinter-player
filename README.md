@@ -12,13 +12,11 @@ Murzynki Bambo: Filip Zabrzewski, Fabian Stadnik
 
 - Tworzenie pracy nad terminarzem w dniu 16.10.2024 
 
-## Spis treści:
-
-
-* [Ogólne informacje]
-* Technologie
-* instrukcja
-* Wygląd aplikacji
+# Spis treści
+* [Ogólne informacje](Ogólne-iformacje)
+* [Technologie](Technologie)
+* [Instrukcja](Instrukcja)
+* [Wygląd aplikacji](Wygląd-aplikacji)
 
 
 
@@ -30,3 +28,25 @@ Murzynki Bambo: Filip Zabrzewski, Fabian Stadnik
 ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
 </details>
 
+## Technologie
+<details>
+<summary>Click here to see general information about <b>Project</b>!</summary>
+<b>Lorem ipsum</b>. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+</details>
+
+
+## Instrukcja
+<details>
+<summary>Click here to see general information about <b>Project</b>!</summary>
+<b>Lorem ipsum</b>. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+</details>
+
+
+## Wygląd aplikacji
+<details>
+<summary>Click here to see general information about <b>Project</b>!</summary>
+<b>Lorem ipsum</b>. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+</details>
