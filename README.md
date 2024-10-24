@@ -47,6 +47,6 @@ ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
 ## Wygląd aplikacji
 <details>
 <summary>Click here to see general information about <b>Project</b>!</summary>
-<b>Lorem ipsum</b>. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
-ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
+<img src ="https://d2lv8q3wuf5bky.cloudfront.net/wp-content/uploads/2016/04/behappy300.jpg?x68484" 
+width="50%" height="50%" alt='logo firmy'>
 </details>
