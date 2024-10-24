@@ -15,7 +15,7 @@ Murzynki Bambo: Filip Zabrzewski, Fabian Stadnik
 ## Spis treści:
 
 
-* Ogólne informacje
+* [Ogólne informacje]
 * Technologie
 * instrukcja
 * Wygląd aplikacji
