@@ -1,8 +1,8 @@
 from main import *
 from GUI import *
 
-def main():
-    startWindow()
+# def main():
+    # startWindow()
 
 
 if __name__ == '__main__':

@@ -16,8 +16,8 @@ def youtube_search(query, max_results=10):
 
     return response['items']
 
-def main():
-    query = input("Wpisz zapytanie do wyszukania: ")
+def main(query):
+    # query = input("Wpisz zapytanie do wyszukania: ")
     results = youtube_search(query)
 
     for item in results:
