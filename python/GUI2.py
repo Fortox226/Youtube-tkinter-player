@@ -1,6 +1,6 @@
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame
 from pathlib import Path
-from searcher import *
+from searcher import youtube_search
 from main import *
 
 
@@ -149,6 +149,21 @@ canvas = Canvas(
     relief = "ridge"
 )
 
+frame = Frame(root, width=400, height=200, bg='gray')
+frame.place(x=90, y=120.5)  # Ustawienie ramki w lewym górnym rogu okna
+
+def showResult(query):
+    results = youtube_search(query)
+# Dodawanie przycisków do ramki
+    for index, item in enumerate(results):
+        video_id = item['id'].get('videoId')
+        if video_id:
+            title = item['snippet']['title']
+
+            # Tworzenie przycisku z tytułem
+            button = Button(frame, text=title, width=70, command=lambda v=video_id: print(f"URL: https://www.youtube.com/watch?v={video_id}"))
+            button.pack(pady=5)  # Dodanie odstępu między przyciskami
+
 canvas.place(x = 0, y = 0)
 canvas.create_text(
     170.0,
@@ -181,7 +196,7 @@ button1 = Button(
     bg="#D9D9D9",
     fg="#000716",
     highlightthickness=0,
-    command=lambda: main(entry_1.get())
+    command=lambda: showResult(entry_1.get())
 )
 
 button1.place(
