@@ -152,17 +152,20 @@ canvas = Canvas(
 frame = Frame(root, width=400, height=200, bg='gray')
 frame.place(x=90, y=120.5)  # Ustawienie ramki w lewym górnym rogu okna
 
+
+
 def showResult(query):
     results = youtube_search(query)
-# Dodawanie przycisków do ramki
+
+    for widget in frame.winfo_children():
+        widget.destroy()
+
     for index, item in enumerate(results):
         video_id = item['id'].get('videoId')
         if video_id:
             title = item['snippet']['title']
-
-            # Tworzenie przycisku z tytułem
-            button = Button(frame, text=title, width=70, command=lambda v=video_id: print(f"URL: https://www.youtube.com/watch?v={video_id}"))
-            button.pack(pady=5)  # Dodanie odstępu między przyciskami
+            button = Button(frame, text=title, width=60, command=lambda v=video_id: print(f"URL: https://www.youtube.com/watch?v={v}"))
+            button.pack(pady=5) 
 
 canvas.place(x = 0, y = 0)
 canvas.create_text(
