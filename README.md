@@ -4,7 +4,7 @@
 --------------------------------------------------
 
 Menadżer: Jan Miepariszwili<br>
-Mężczyzna na posyłki: Andrzej Wieliczko <br>
+Dziewczynka na posyłki: Andrzej Wieliczko <br>
 Dokumentator: Tobiasz Twardak <br>
 Murzynki Bambo: Filip Zabrzewski, Fabian Stadnik
 
