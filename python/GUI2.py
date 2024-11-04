@@ -1,4 +1,4 @@
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, messagebox
 from pathlib import Path
 from searcher import youtube_search
 from main import *
@@ -164,9 +164,19 @@ def showResult(query):
         video_id = item['id'].get('videoId')
         if video_id:
             title = item['snippet']['title']
-            button = Button(frame, text=title, width=60, command=lambda v=video_id: print(f"URL: https://www.youtube.com/watch?v={v}"))
-            button.pack(pady=5) 
 
+            def on_button_click(btn, v_id):
+                if btn.cget("text") == title:
+                    btn.config(text=v_id)
+                else:
+   
+                    root.clipboard_clear()
+                    root.clipboard_append(v_id)
+                    messagebox.showinfo("Skopiowano", f"ID '{v_id}' zostało skopiowane do schowka!")
+
+            button = Button(frame, text=title, width=40, command=lambda b=button, v=video_id: on_button_click(b, v))
+            button.pack(pady=5)
+#https://www.youtube.com/watch?v={v}
 canvas.place(x = 0, y = 0)
 canvas.create_text(
     170.0,
