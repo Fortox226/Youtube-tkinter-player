@@ -1,50 +1,48 @@
 import yt_dlp
 import requests
 import time
-# from GUI import *
+import subprocess
 
-ydl_opts = {
-    # 'format': 'bestaudio/best',
-    # 'postprocessors': [{
-    #     'key': 'FFmpegExtractAudio',
-    #     'preferredcodec': 'mp3',
-    #     'preferredquality': '192',
-    # }],
-}
+ffmpeg_path = "C:/ffmpeg"
 
 def allFromMain(link, format):
     def main():
-        # if format == 'mp4':
-        #     ydl_opts = {
-        #         'format': 'bestaudio/best',
-        #         'postprocessors': [{
-        #             'key': 'FFmpegExtractAudio',
-        #             'preferredcodec': 'mp4',
-        #             'preferredquality': '192',
-        #         }],
-        #     } 
-        # elif format == 'mp3':
-        #     ydl_opts = {
-        #         'format': 'bestaudio/best',
-        #         'postprocessors': [{
-        #             'key': 'FFmpegExtractAudio',
-        #             'preferredcodec': 'mp3',
-        #         }],
-        #     } 
-        # else:
-        #     print('something went wrong')
+        with yt_dlp.YoutubeDL() as ydl:
+            if format == 'mp4':
+                ydl_opts = {
+                     'format': 'best',
+                     'outtmpl': '%(title)s.%(ext)s',
+                     'noplaylist': True,
+                 }
+                
+            elif format == 'mp3':
+                ydl_opts = {
+                    'format': 'bestaudio/best',
+                    'outtmpl': '%(title)s.%(ext)s',
+                    'noplaylist': True,
+                }
 
-        def dwl_vid(video_url):
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                ydl.download([video_url])
+            else:
+                print("Nieprawidłowy wybór formatu.")
+                return
+            
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([link])
 
-        channel = 1
-        while channel == 1:
-            # link_of_the_video = input("Copy & paste the URL of the YouTube video you want to download: ")
-            zxt = link.strip()
+            if format == 'mp3':
+                filename = ydl.prepare_filename(ydl.extract_info(link, download=False))
+                file_extension = filename.split('.')[-1]
+                
+                if file_extension != 'mp3':  # Jeśli to nie jest mp3, konwertuj
+                    mp3_filename = filename.replace(file_extension, 'mp3')
+                    command = [
+                        ffmpeg_path, '-i', filename, '-vn', '-ar', '44100', '-ac', '2', '-b:a', '192k', mp3_filename
+                    ]
+                    subprocess.run(command)  # Uruchamiamy FFmpeg do konwersji
 
-            dwl_vid(zxt)
-            channel = int(input("Enter 1 if you want to download more videos\nEnter 0 if you are done: "))
+                    print(f"Plik audio zapisany jako {mp3_filename}")
+
+        
 
     def is_connected():
         try:
