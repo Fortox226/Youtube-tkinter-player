@@ -1,4 +1,4 @@
-# Youtube-tkinter-player
+# Youtube-tkinter-Search-and-Download
 
 # Twórcy
 --------------------------------------------------
