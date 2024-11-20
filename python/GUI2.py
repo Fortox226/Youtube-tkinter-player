@@ -1,6 +1,6 @@
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, messagebox
 from pathlib import Path
-# from searcher import youtube_search
+from searcher import youtube_search
 from main import *
 import html
 
