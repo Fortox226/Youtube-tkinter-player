@@ -1,47 +1,19 @@
 import yt_dlp
 import requests
 import time
-import subprocess
 
 ffmpeg_path = "C:/ffmpeg"
 
-def allFromMain(link, format):
+def allFromMain(link):
     def main():
-        with yt_dlp.YoutubeDL() as ydl:
-            if format == 'mp4':
-                ydl_opts = {
-                     'format': 'best',
-                     'outtmpl': '%(title)s.%(ext)s',
-                     'noplaylist': True,
-                 }
+        ydl_opts = {
+            'format': 'best',
+            'outtmpl': '%(title)s.%(ext)s',
+            'noplaylist': True,
+        }
                 
-            elif format == 'mp3':
-                ydl_opts = {
-                    'format': 'bestaudio/best',
-                    'outtmpl': '%(title)s.%(ext)s',
-                    'noplaylist': True,
-                }
-
-            else:
-                print("Nieprawidłowy wybór formatu.")
-                return
-            
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             ydl.download([link])
-
-            if format == 'mp3':
-                filename = ydl.prepare_filename(ydl.extract_info(link, download=False))
-                file_extension = filename.split('.')[-1]
-                
-                if file_extension != 'mp3':  # Jeśli to nie jest mp3, konwertuj
-                    mp3_filename = filename.replace(file_extension, 'mp3')
-                    command = [
-                        ffmpeg_path, '-i', filename, '-vn', '-ar', '44100', '-ac', '2', '-b:a', '192k', mp3_filename
-                    ]
-                    subprocess.run(command)  # Uruchamiamy FFmpeg do konwersji
-
-                    print(f"Plik audio zapisany jako {mp3_filename}")
-
         
 
     def is_connected():
