@@ -4,7 +4,7 @@
 --------------------------------------------------
 
 Menadżer: Jan Miepariszwili<br>
-Dziewczynka na posyłki: Andrzej Wieliczko <br>
+Chłopiec na posyłki: Andrzej Wieliczko <br>
 Dokumentator: Tobiasz Twardak <br>
 Murzynki Bambo: Filip Zabrzewski, Fabian Stadnik
 
@@ -23,16 +23,11 @@ Murzynki Bambo: Filip Zabrzewski, Fabian Stadnik
 
 ## Ogólne informacje
 <details>
-<summary>Click here to see general information about <b>Project</b>!</summary>
+<summary><b>Naciśnij żeby zobaczyć informacje ogólne</b></summary>
 Program  służy do wyszukiwania filmików na youtubie i pobierania ich.
 </details>
 
-## Technologie
-<details>
-<summary>Click here to see general information about <b>Project</b>!</summary>
-<b>Lorem ipsum</b>. Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
-ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
-</details>
+
 
 
 ## Instrukcja
@@ -52,7 +47,7 @@ ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
 ## Wygląd aplikacji
 <details>
     
-<summary><b>Naciśnij żeby zobaczyć wygląd aplikacji!</b></summary>
+<summary><b>Naciśnij żeby zobaczyć wygląd aplikacji</b></summary>
 
 ![obrazek1projekt](https://github.com/user-attachments/assets/2827340b-8d02-431c-831f-970609c2c7bf)
 ![obrazek2projekt](https://github.com/user-attachments/assets/12818923-eb28-4b70-ae22-dbe9cb23cda2)
