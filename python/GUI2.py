@@ -51,28 +51,28 @@ def openDownloader():
         98.5,
         image=entry_image_1
     )
-    # entry_1 = Entry(
-    #     master=window,
-    #     bd=0,
-    #     bg="#D9D9D9",
-    #     fg="#000716",
-    #     highlightthickness=0
-    # )
-    # entry_1.place(
-    #     x=323.5,
-    #     y=80.0,
-    #     width=48.0,
-    #     height=35.0
-    # )
+    entry_1 = Entry(
+        master=window,
+        bd=0,
+        bg="#D9D9D9",
+        fg="#000716",
+        highlightthickness=0
+    )
+    entry_1.place(
+        x=323.5,
+        y=80.0,
+        width=48.0,
+        height=35.0
+    )
 
-    # canvas.create_text(
-    #     315.0,
-    #     61.0,
-    #     anchor="nw",
-    #     text="Format",
-    #     fill="#FFFFFF",
-    #     font=("AROneSans Regular", 14 * -1)
-    # )
+    canvas.create_text(
+        315.0,
+        61.0,
+        anchor="nw",
+        text="Format",
+        fill="#FFFFFF",
+        font=("AROneSans Regular", 14 * -1)
+    )
 
     canvas.create_text(
         105.0,
