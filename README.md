@@ -50,7 +50,11 @@ ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem
 
 
 ## Wygląd aplikacji
-**Naciśnij żeby zobaczyć wygląd aplikacji**!
+<details>
+    
+<summary>**Naciśnij żeby zobaczyć wygląd aplikacji**!</summary>
 
 ![obrazek1projekt](https://github.com/user-attachments/assets/2827340b-8d02-431c-831f-970609c2c7bf)
 ![obrazek2projekt](https://github.com/user-attachments/assets/12818923-eb28-4b70-ae22-dbe9cb23cda2)
+
+</details>
