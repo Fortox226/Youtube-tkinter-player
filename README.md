@@ -6,7 +6,7 @@
 Menadżer: Jan Miepariszwili<br>
 Chłopiec na posyłki: Andrzej Wieliczko <br>
 Dokumentator: Tobiasz Twardak <br>
-Murzynki Bambo: Filip Zabrzewski, Fabian Stadnik
+Kodownicy: Filip Zabrzewski, Fabian Stadnik
 
 ---------------------------------------------------
 
