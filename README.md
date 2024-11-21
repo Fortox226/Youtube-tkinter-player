@@ -24,7 +24,7 @@ Main coders: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 <summary>Click here to see general informations about <b>Project!</b></summary>
 - The program is designed for searching YouTube videos and downloading them.<br><br>
 - It allows users to quickly and easily download any YouTube video.<br><br>
-- The main advantage of this program is that it eliminates the need for a YouTube Premium          subscription, which is required for direct downloads on YouTube.
+- The main advantage of this program is that it eliminates the need for a YouTube Premium subscription, which is required for direct downloads on YouTube.
 </details>
 
 
@@ -33,10 +33,7 @@ Main coders: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 ## Setup
 <details>
 <summary>Click here to see how to setup the <b>Project!</b> </summary>
-<b>1</b>. Komendy potrzebne do pobrania odpowienich bibliotek: <br>
-    - pip install requests <br>
-    - pip install yt-dlp<br>
-    - pip install tkinter<br> <br>
+<b>1</b>. Type the command python install.py in the console, and all the required libraries will be downloaded automatically. <br><br>
 <b>2</b>. Uruchom plik GUI2.py<br> <br>
 <b>3</b>. Wpisz w polu wyszukiwania nazwę filmu który cię interesuje. Po naciśnięciu wybranego wyniku link do tego filmu skopiuje się do schowka.<br> <br>
 <b>4</b>. Następnie naciśnij na przycisk open downloader, wklej link w odpowiednim oknie, wpisz format w oknie obok(działa tylko mp4) i  naciśnij przycisk download <br> <br>
@@ -50,7 +47,7 @@ Main coders: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 <summary>Click here to see the application view</summary>
 
 ![obrazek1projekt](https://github.com/user-attachments/assets/2827340b-8d02-431c-831f-970609c2c7bf)
-width = ""
+
 
 ![obrazek2projekt](https://github.com/user-attachments/assets/12818923-eb28-4b70-ae22-dbe9cb23cda2)
 
