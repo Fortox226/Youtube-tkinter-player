@@ -1,36 +1,38 @@
 # Youtube-tkinter-Search-and-Download
 
-# Twórcy
+# Creators
 --------------------------------------------------
 
-Menadżer: Jan Miepariszwili<br>
-Dokumentator: Tobiasz Twardak <br>
-Kodownicy: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
+Manager: Jan Miepariszwili<br>
+Documentor: Tobiasz Twardak <br>
+Main coders: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 
 ---------------------------------------------------
 
 
 
-# Spis treści
-* [Ogólne informacje](#ogólne-informacje)
-* [Instrukcja](#instrukcja)
-* [Wygląd aplikacji](#wygląd-aplikacji)
+# Content of Project
+* [General info](#general-info)
+* [Setup](#setup)
+* [Application view](#application-view)
 
 
 
 
-## Ogólne informacje
+## General info
 <details>
-<summary><b>Naciśnij żeby zobaczyć informacje ogólne</b></summary>
-Program  służy do wyszukiwania filmików na youtubie i pobierania ich.
+<summary>Click here to see general informations about <b>Project!</b></summary>
+- The program is designed for searching YouTube videos and downloading them.<br><br>
+- It allows users to quickly and easily download any YouTube video.<br><br>
+- The main advantage of this program is that it eliminates the need for a YouTube Premium          subscription, which is required for direct downloads on YouTube.
 </details>
 
 
 
 
-## Instrukcja
+## Setup
 <details>
-<summary><b>Naciśnij żeby zobaczyć instrukcje</b> </summary>
+<summary>Click here to see how to setup the <b>Project!</b> </summary>
 <b>1</b>. Komendy potrzebne do pobrania odpowienich bibliotek: <br>
     - pip install requests <br>
     - pip install yt-dlp<br>
@@ -42,12 +44,14 @@ Program  służy do wyszukiwania filmików na youtubie i pobierania ich.
 </details>
 
 
-## Wygląd aplikacji
+## Application view
 <details>
     
-<summary><b>Naciśnij żeby zobaczyć wygląd aplikacji</b></summary>
+<summary>Click here to see the application view</summary>
 
 ![obrazek1projekt](https://github.com/user-attachments/assets/2827340b-8d02-431c-831f-970609c2c7bf)
+width = ""
+
 ![obrazek2projekt](https://github.com/user-attachments/assets/12818923-eb28-4b70-ae22-dbe9cb23cda2)
 
 </details>
