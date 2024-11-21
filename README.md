@@ -4,9 +4,8 @@
 --------------------------------------------------
 
 Menadżer: Jan Miepariszwili<br>
-Chłopiec na posyłki: Andrzej Wieliczko <br>
 Dokumentator: Tobiasz Twardak <br>
-Kodownicy: Filip Zabrzewski, Fabian Stadnik
+Kodownicy: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 
 ---------------------------------------------------
 
