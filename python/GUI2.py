@@ -162,16 +162,14 @@ def showResult(query):
         if video_id:
             coded_title = item['snippet']['title']
             title = html.unescape(coded_title)
-            
             print(title)
 
-            def on_button_click(btn, v_id):
-                root.clipboard_clear()
-                root.clipboard_append(f'https://www.youtube.com/watch?v={v_id}')
-                messagebox.showinfo("Skopiowano", f"link https://www.youtube.com/watch?v='{v_id}' został skopiowany do schowka!")
+            def on_button_click(v_id):
+                allFromMain(f'https://www.youtube.com/watch?v={v_id}')
+                
 
             button = Button(frame, text=title, width=50)
-            button.config(command=lambda b=button, v=video_id: on_button_click(b, v))
+            button.config(command=lambda v=video_id: on_button_click(v))
             button.pack(pady=5)
 
 canvas.place(x = 0, y = 0)
