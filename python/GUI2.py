@@ -5,11 +5,8 @@ from main import *
 import html
 
 
-
-
-
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\Admin\Documents\GitHub\Youtube-tkinter-player\python\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame0")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -125,8 +122,8 @@ def openDownloader():
     button_1.place(
         x=135.0,
         y=134.0,
-        width=220.0,
-        height=36.0
+        width=216.0,
+        height=33.0
     )
     window.resizable(False, False)
     window.mainloop()

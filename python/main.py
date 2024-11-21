@@ -2,8 +2,6 @@ import yt_dlp
 import requests
 import time
 
-ffmpeg_path = "C:/ffmpeg"
-
 def allFromMain(link):
     def main():
         ydl_opts = {
