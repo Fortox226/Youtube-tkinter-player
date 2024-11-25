@@ -35,9 +35,8 @@ Main coders: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 <summary>Click here to see how to setup the <b>Project!</b> </summary>
 <b>1</b>. Type the command python install.py in the console, and all the required libraries will be downloaded automatically. <br><br>
 <b>2</b>. Uruchom plik GUI2.py<br> <br>
-<b>3</b>. Wpisz w polu wyszukiwania nazwę filmu który cię interesuje. Po naciśnięciu wybranego wyniku link do tego filmu skopiuje się do schowka.<br> <br>
-<b>4</b>. Następnie naciśnij na przycisk open downloader, wklej link w odpowiednim oknie, wpisz format w oknie obok(działa tylko mp4) i  naciśnij przycisk download <br> <br>
-<b>5</b>. Film zostanie pobrany w folderze z plikami aplikacji 
+<b>3</b>. Wpisz w polu wyszukiwania nazwę filmu który cię interesuje. Po naciśnięciu wybranego wyniku, nasz program odrazu rozpocznie pobieranie w formacie mp4.<br> <br>
+<b>4</b>. Film zostanie pobrany w folderze z plikami aplikacji 
 </details>
 
 
