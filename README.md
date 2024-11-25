@@ -13,7 +13,7 @@ Main coders: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 
 # Content of Project
 * [General info](#general-info)
-* [Technologies] (#)
+* [Technologies] (#technologies)
 * [Setup](#setup)
 * [Application view](#application-view)
 
@@ -32,6 +32,7 @@ Main coders: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 ## Technologies
 <details>
 <summary>Click here to see technologies used in this program.</summary>
+</details>
 
 
 ## Setup
