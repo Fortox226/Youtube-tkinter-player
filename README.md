@@ -13,7 +13,7 @@ Main coders: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 
 # Content of Project
 * [General info](#general-info)
-* [Technologies] (#technologies)
+* [Technologies](#technologies)
 * [Setup](#setup)
 * [Application view](#application-view)
 
@@ -23,16 +23,22 @@ Main coders: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 ## General info
 <details>
 <summary>Click here to see general informations about project.</summary>
-- The program is designed for searching YouTube videos and downloading them.<br><br>
-- It allows users to quickly and easily download any YouTube video.<br><br>
-- The main advantage of this program is that it eliminates the need for a YouTube Premium subscription, which is required for direct downloads on YouTube.
+<li>The program is designed for searching YouTube videos and downloading them.<br><br>
+<li>It allows users to quickly and easily download any YouTube video.<br><br>
+<li>The main advantage of this program is that it eliminates the need for a YouTube Premium subscription, which is required for direct downloads on YouTube.
 </details>
 
 
 ## Technologies
-<details>
-<summary>Click here to see technologies used in this program.</summary>
-</details>
+The project was built using the following technologies: <br>
+<li>Programming language: Python 3.10 <br>
+<li>Python Libraries:
+<ul><li>requests - for handling HTTP requests.<br>
+<li>yt-dlp - for downloading videos from YouTube.<br>
+<li>tkinter - for creating the graphical user interface (GUI).<br>
+<li>google-api-python-client - to search results
+</ul><li>Version Control Systems: Git
+
 
 
 ## Setup
