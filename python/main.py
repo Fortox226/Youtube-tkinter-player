@@ -1,18 +1,43 @@
-import yt_dlp
+from yt_dlp import YoutubeDL
 import requests
 import time
 
-def allFromMain(link):
+def allFromMain(link, progress_bar, progress_label):
+    """
+    Pobiera wideo z YouTube za pomocą yt_dlp i aktualizuje pasek postępu.
+
+    Args:
+        link: Link do wideo na YouTube.
+        progress_bar: Obiekt paska postępu (ttk.Progressbar).
+        progress_label: Label do wyświetlania statusu.
+    """
+    def progress_hook(d):
+        if d['status'] == 'downloading':
+            downloaded = d.get('_percent_str', '').strip('%')
+            speed = d.get('_speed_str', 'N/A')
+            eta = d.get('eta', 'N/A')
+            
+            # Aktualizuj pasek postępu
+            try:
+                progress_bar['value'] = float(downloaded)
+                progress_label.config(text=f"Downloading... {downloaded}% | Speed: {speed} | ETA: {eta}s")
+            except ValueError:
+                pass
+        elif d['status'] == 'finished':
+            progress_label.config(text="Download complete!")
+
     def main():
         ydl_opts = {
             'format': 'best',
             'outtmpl': '%(title)s.%(ext)s',
             'noplaylist': True,
+            'progress_hooks': [progress_hook],  # Dodajemy hook do śledzenia postępu
         }
-                
-        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        with YoutubeDL(ydl_opts) as ydl:
             ydl.download([link])
-        
+
+
+    # Uruchamiamy pobieranie
 
     def is_connected():
         try:
