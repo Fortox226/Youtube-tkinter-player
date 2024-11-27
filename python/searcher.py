@@ -1,8 +1,8 @@
-import os
 from googleapiclient.discovery import build
+from API import *
 
 # Ustaw swój klucz API
-API_KEY = 'AIzaSyA8QVQKMP3iCUWcIX5wha6bCPMuA8FS6Rs'
+API_KEY = API
 
 def youtube_search(query, max_results=5):
     youtube = build('youtube', 'v3', developerKey=API_KEY)
