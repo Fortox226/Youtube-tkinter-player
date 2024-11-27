@@ -1,9 +1,12 @@
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, messagebox
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, messagebox, ttk
 from pathlib import Path
 from searcher import youtube_search
 from main import *
 import html
-
+import threading
+from tkinter import *
+from main import allFromMain
+from downlad_information import *
 
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame0")
@@ -49,12 +52,14 @@ def showResult(query):
             print(title)
 
             def on_button_click(v_id):
-                allFromMain(f'https://www.youtube.com/watch?v={v_id}')
+                create_download_ui(root, f'https://www.youtube.com/watch?v={v_id}')
                 
 
             button = Button(frame, text=title, width=50)
             button.config(command=lambda v=video_id: on_button_click(v))
             button.pack(pady=5)
+
+
 
 canvas.place(x = 0, y = 0)
 canvas.create_text(

@@ -23,6 +23,7 @@ Main coders: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 ## General info
 <details>
 <summary>Click here</summary>
+<summary>Click here</summary>
 <li>The program is designed for searching YouTube videos and downloading them.<br><br>
 <li>It allows users to quickly and easily download any YouTube video.<br><br>
 <li>The main advantage of this program is that it eliminates the need for a YouTube Premium subscription, which is required for direct downloads on YouTube.
@@ -31,7 +32,7 @@ Main coders: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 
 ## Technologies
 The project was built using the following technologies: <br>
-<li>Programming language: Python 3.10 <br>
+<li>Programming language: Python 3.12.2 <br>
 <li>Python Libraries:
 <ul><li>requests - for handling HTTP requests.<br>
 <li>yt-dlp - for downloading videos from YouTube.<br>
@@ -44,6 +45,8 @@ The project was built using the following technologies: <br>
 ## Setup
 <details>
 <summary>Click here </summary>
+<b>1</b>. Type the command 'python install.py' in the console, and all the required libraries will be downloaded automatically. <br><br>
+<summary>Click here </summary>
 <b>1</b>. Type the command python install.py in the console, and all the required libraries will be downloaded automatically. <br><br>
 <b>2</b>. Run the GUI2.py file.<br> <br>
 <b>3</b>. Enter the name of the video you are interested in into the search field. After clicking on your chosen result, our program will immediately start downloading it in MP4 format.<br> <br>
@@ -54,6 +57,7 @@ The project was built using the following technologies: <br>
 ## Application view
 <details>
     
+<summary>Click here</summary>
 <summary>Click here</summary>
 
 
