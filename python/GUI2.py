@@ -1,12 +1,12 @@
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, messagebox, ttk
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, messagebox
 from pathlib import Path
 from searcher import youtube_search
 from main import *
 import html
-import threading
 from tkinter import *
-from main import allFromMain
+from main import *
 from downlad_information import *
+import os
 
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path(r"./assets/frame0")
@@ -18,7 +18,7 @@ def relative_to_assets(path: str) -> Path:
 #Główny plik
 
 root = Tk()
-root.title("Yt-Searcher :)")
+root.title("Yt-Searcher")
 root.geometry("600x400")
 root.configure(bg = "#FF4444")
 
@@ -59,7 +59,39 @@ def showResult(query):
             button.config(command=lambda v=video_id: on_button_click(v))
             button.pack(pady=5)
 
+def open_folder():
+    folder_path = "./Videos"  # Ścieżka do folderu w projekcie
+    absolute_path = os.path.abspath(folder_path)  # Zamiana na pełną ścieżkę
 
+    if os.path.exists(absolute_path):
+        # Otwórz folder w eksploratorze
+        if os.name == 'nt':  # Windows
+            os.startfile(absolute_path)
+        elif os.name == 'posix':  # macOS/Linux
+            os.system(f'xdg-open "{absolute_path}"')
+    else:
+        messagebox.showerror("Błąd", f"Folder '{folder_path}' nie istnieje!")
+
+# button_image3 = PhotoImage(
+#     file=relative_to_assets("Folder.jpg")
+# )
+
+button3 = Button(
+    # image=button_image3,
+    text="Open Videos Folder",
+    bd=0,
+    bg="#D9D9D9",
+    fg="#000716",
+    highlightthickness=0,
+    command=lambda: open_folder(),
+)
+
+button3.place(
+    x=10.0,
+    y=335.0,
+    width=120,
+    height=50
+)
 
 canvas.place(x = 0, y = 0)
 canvas.create_text(

@@ -29,7 +29,7 @@ def allFromMain(link, progress_bar, progress_label):
     def main():
         ydl_opts = {
             'format': 'best',
-            'outtmpl': '%(title)s.%(ext)s',
+            'outtmpl': './Videos/%(title)s.%(ext)s',
             'noplaylist': True,
             'progress_hooks': [progress_hook],  # Dodajemy hook do śledzenia postępu
         }
