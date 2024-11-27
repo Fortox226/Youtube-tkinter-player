@@ -60,11 +60,10 @@ def showResult(query):
             button.pack(pady=5)
 
 def open_folder():
-    folder_path = "./Videos"  # Ścieżka do folderu w projekcie
-    absolute_path = os.path.abspath(folder_path)  # Zamiana na pełną ścieżkę
+    folder_path = "./Videos"
+    absolute_path = os.path.abspath(folder_path)
 
     if os.path.exists(absolute_path):
-        # Otwórz folder w eksploratorze
         if os.name == 'nt':  # Windows
             os.startfile(absolute_path)
         elif os.name == 'posix':  # macOS/Linux
@@ -72,12 +71,8 @@ def open_folder():
     else:
         messagebox.showerror("Błąd", f"Folder '{folder_path}' nie istnieje!")
 
-# button_image3 = PhotoImage(
-#     file=relative_to_assets("Folder.jpg")
-# )
 
 button3 = Button(
-    # image=button_image3,
     text="Open Videos Folder",
     bd=0,
     bg="#D9D9D9",

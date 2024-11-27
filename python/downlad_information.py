@@ -2,6 +2,7 @@ import threading
 from tkinter import Toplevel, Label
 from tkinter import ttk
 from main import allFromMain
+from PIL import Image, ImageTk
 
 def create_download_ui(root, link):
     """
@@ -21,7 +22,6 @@ def create_download_ui(root, link):
 
     # Pasek postępu
     progress_bar = ttk.Progressbar(download_window, orient="horizontal", length=300, mode="determinate")
-    progress_bar.pack(pady=10)
 
     # Konfiguracja paska postępu
     progress_bar['value'] = 0

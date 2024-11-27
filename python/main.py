@@ -3,14 +3,6 @@ import requests
 import time
 
 def allFromMain(link, progress_bar, progress_label):
-    """
-    Pobiera wideo z YouTube za pomocą yt_dlp i aktualizuje pasek postępu.
-
-    Args:
-        link: Link do wideo na YouTube.
-        progress_bar: Obiekt paska postępu (ttk.Progressbar).
-        progress_label: Label do wyświetlania statusu.
-    """
     def progress_hook(d):
         if d['status'] == 'downloading':
             downloaded = d.get('_percent_str', '').strip('%')
@@ -21,6 +13,7 @@ def allFromMain(link, progress_bar, progress_label):
             try:
                 progress_bar['value'] = float(downloaded)
                 progress_label.config(text=f"Downloading... {downloaded}% | Speed: {speed} | ETA: {eta}s")
+                
             except ValueError:
                 pass
         elif d['status'] == 'finished':
