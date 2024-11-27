@@ -45,12 +45,24 @@ The project was built using the following technologies: <br>
 ## Setup
 <details>
 <summary>Click here </summary>
-<b>1</b>. Type the command 'python install.py' in the console, and all the required libraries will be downloaded automatically. <br><br>
+1. Create your API key by following the instructions below. <br><br>
+2. Type the command 'python install.py' in the console, and all the required libraries will be downloaded automatically. <br><br>
+3. Run the GUI2.py file.<br> <br>
+4. Enter the name of the video you are interested in into the search field. After clicking on your chosen result, our program will immediately start downloading it in MP4 format.<br> <br>
+5. The video will be downloaded to your computer.
+</details>
 
-<b>1</b>. Type the command python install.py in the console, and all the required libraries will be downloaded automatically. <br><br>
-<b>2</b>. Run the GUI2.py file.<br> <br>
-<b>3</b>. Enter the name of the video you are interested in into the search field. After clicking on your chosen result, our program will immediately start downloading it in MP4 format.<br> <br>
-<b>4</b>. The video will be downloaded to your computer.
+### Instruction for creating an API key
+<details>
+<summary>Click here</summary>
+1. Open google cloud<br>
+2. Search youtube data api v3<br>
+3. Click enable and manage<br>
+4. Open credentials tab, click create credentials and API<br>
+5. Copy your api key and open file API.py in youtube-tkinter-search-and-download folder
+<br>
+6. Paste your api in variable API = ""
+
 </details>
 
 
