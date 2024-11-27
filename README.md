@@ -58,9 +58,9 @@ The project was built using the following technologies: <br>
 1. Open google cloud<br>
 2. Search youtube data api v3<br>
 3. Click enable and manage<br>
-<img src ="first screen.png" width = 40% height = 40%> </img> <br>
+<img src ="./python/assets/frame0/first screen.png" width = 40% height = 40%> </img> <br>
 4. Open credentials tab, click create credentials and API<br>
-<img src ="second screen.png" width = 40% height = 40%> </img> <br>
+<img src ="./python/assets/frame0/second screen.png" width = 40% height = 40%> </img> <br>
 5. Copy your api key and open file API.py in youtube-tkinter-search-and-download folder
 <br>
 6. Paste your api in variable API = ""
@@ -78,5 +78,5 @@ The project was built using the following technologies: <br>
 
 
 
-<img src="obrazek2.png">
+<img src="./python/assets/frame0/obrazek2.png">
 </details>

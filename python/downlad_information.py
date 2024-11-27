@@ -2,7 +2,6 @@ import threading
 from tkinter import Toplevel, Label
 from tkinter import ttk
 from main import allFromMain
-from PIL import Image, ImageTk
 
 def create_download_ui(root, link):
     """
