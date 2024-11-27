@@ -3,7 +3,7 @@
 # Creators
 --------------------------------------------------
 
-Manager: Jan Miepariszwili<br>
+Project Manager: Jan Miepariszwili<br>
 Documention: Tobiasz Twardak <br>
 Main coders: Filip Zabrzewski, Fabian Stadnik, Andrzej Wieliczko
 
