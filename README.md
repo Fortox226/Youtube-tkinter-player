@@ -78,5 +78,5 @@ The project was built using the following technologies: <br>
 
 
 
-<img src="obrazek.png">
+<img src="obrazek2.png">
 </details>
